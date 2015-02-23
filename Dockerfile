@@ -6,6 +6,8 @@ RUN apk add --update nginx && mkdir -p /tmp/nginx/client-body
 
 ADD nginx.conf /etc/nginx/nginx.conf
 
+VOLUME /var/log/nginx
+
 EXPOSE 80 443
 
 CMD ["nginx", "-g", "daemon off;"]
