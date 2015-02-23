@@ -1,0 +1,5 @@
+#!/bin/sh
+
+SCRIPTPATH=$(dirname "$0")
+
+docker build -t quay.io/tomafro/nginx $SCRIPTPATH/..
